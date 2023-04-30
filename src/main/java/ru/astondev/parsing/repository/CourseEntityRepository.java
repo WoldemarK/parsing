@@ -5,4 +5,5 @@ import org.springframework.stereotype.Repository;
 import ru.astondev.parsing.model.CourseDtoOnce;
 @Repository
 public interface CourseEntityRepository extends JpaRepository<CourseDtoOnce, Long> {
+
 }

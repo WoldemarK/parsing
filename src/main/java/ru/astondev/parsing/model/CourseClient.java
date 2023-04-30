@@ -4,7 +4,6 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
-
 @Component
 public class CourseClient {
     public static final String URL = "https://cbr.ru/scripts/XML_daily.asp?date_req=23/01/2023.xml";
@@ -18,4 +17,5 @@ public class CourseClient {
         }
         return null;
     }
+
 }

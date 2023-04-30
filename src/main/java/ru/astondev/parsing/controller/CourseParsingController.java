@@ -4,7 +4,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import ru.astondev.parsing.service.CourseService;
-
 @RestController
 @RequiredArgsConstructor
 public class CourseParsingController {
@@ -13,4 +12,5 @@ public class CourseParsingController {
     public String getListInformation() {
         return courseService.findCourseInfo().toString();
     }
+
 }

@@ -21,20 +21,15 @@ public class CourseDtoOnce {
 
     @XmlElement(name = "CharCode")
     private String charCode;
-
     @XmlElement(name = "Nominal")
     private int nominal;
-
     @XmlElement(name = "Name")
     private String name;
-
     @XmlElement(name = "Value")
     @JsonIgnore
     @Transient
     private String _Value;
-
-    private double value;
-
+   private double value;
     public String get_Value() {
         return _Value;
     }

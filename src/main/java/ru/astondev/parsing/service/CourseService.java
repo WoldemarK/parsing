@@ -6,13 +6,11 @@ import ru.astondev.parsing.model.CourseDtoOnce;
 import ru.astondev.parsing.repository.CourseEntityRepository;
 
 import java.util.List;
-
 @Service
 @RequiredArgsConstructor
 public class CourseService {
     private final CourseEntityRepository courseEntityRepository;
     private final CourseClient courseClient;
-
     public List<CourseDtoOnce> findCourseInfo(){
         return courseEntityRepository.saveAll(courseClient.getCourses());
     }
