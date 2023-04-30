@@ -9,7 +9,7 @@ import ru.astondev.parsing.service.CourseService;
 @RequiredArgsConstructor
 public class CourseParsingController {
     private final CourseService courseService;
-    @GetMapping(value = "/getCourse")
+    @GetMapping(value = "/get")
     public String getListInformation() {
         return courseService.findCourseInfo().toString();
     }
